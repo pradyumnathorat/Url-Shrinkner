@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require('mongoose');
 const shortUrl = require('./models/shortUrls')
 const connect = async () => {
-    await mongoose.connect("mongodb://127.0.0.1:27017/urlShortner");
+    await mongoose.connect("mongodb+srv://Pradyumna:Pradyumna@cluster0.qxvv1hh.mongodb.net/urlShortner");
     console.log("DB Connect");
 }
 connect();
